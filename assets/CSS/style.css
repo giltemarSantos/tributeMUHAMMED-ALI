@@ -1,0 +1,468 @@
+:root{
+    --font-family1: 'Playfair Display', serif;
+    --font-family2: 'Crimson Text', serif;
+    --font-family3: 'Lora', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+header{
+    width: 100%;
+    height: 40rem;
+    background-color: #111110;
+}
+
+header .headerPage{
+    width: 990px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
+    background-color: #302e2e;
+}
+
+.hero h1{
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 18px;
+}
+
+.titleTXT{
+    margin:0px;
+    font-family: 'Crimson Text', serif;
+    font-size: 2.25rem;
+    font-style: italic;
+    letter-spacing: 6px;
+    color:#989898;
+  }
+
+  .line{
+    margin-bottom:20px;
+    height: 25px;
+    width: 250px;
+    border-bottom: 2px solid #d78e38;
+  }
+
+  .date{
+    margin:0;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    letter-spacing: 4px;
+    color:white;
+}
+
+header .headerPage .heroImg img{
+    border-radius: 5%;
+}
+
+.container{
+    width: 990px;
+    height: auto;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    /* background-color: #8a4d4d; */
+}
+
+section{
+    width: 59%;
+    margin: 0 auto;
+    /* background-color: #b183b1  */
+
+}
+
+section h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.18rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4px;
+    margin-top: 1rem;
+    /* margin-bottom: 1em; */
+}
+
+section p{
+    margin: 0.5rem;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 180%;
+    text-align: justify;
+}
+hr{
+    color: #111110;
+}
+
+/* Area lateral */
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 39%;
+    height: 76rem;
+    margin: 1rem 0.5rem;
+    /* background-color: #dd05dd22  */
+}
+
+/* Div card */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h2{
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--font-family3);
+    letter-spacing: 0.5rem;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=34, Color=#D75D29)";/*IE 8*/
+    text-shadow: -3px 2px 3px #D75D29;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#D75D29); /*IE 5.5-7*/
+}
+
+.card .photo{
+    width: auto;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .photo legend{
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.card a{
+    color: #000;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.card a:hover{
+    color: #f8420b;
+    text-decoration:underline;
+}
+
+table, th, td{
+    margin: 0 auto;
+    padding: 0.3rem;
+
+    font-family: var(--font-family2);
+    font-size: 1rem;
+    font-weight: 100;
+
+    /* border: 1px solid #ffffff; */
+}
+
+abbr[title]{
+    cursor: help;
+    text-decoration: underline double;
+}
+
+blockquote .citacao{
+    color: #635029;
+    margin: auto 0.3rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Crimson Text';
+}
+
+.citacao span img{
+    width:26%;
+    height: auto;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 10rem;
+
+    margin-top: 1rem;
+
+    text-align: center;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000;
+}
+
+.rodape{
+    width: 970px;
+    height: 5rem;
+    margin: 10px auto;
+    /* background-color:#d3de3de3; */
+
+    text-align: center;
+}
+
+.rodape span{
+    /* height: 5rem; */
+    margin-top: 8px;
+    font-size: 1rem;
+    font-family: var(--font-family3);
+    line-height: 2rem;
+    color: aliceblue;
+}
+
+/* Tamanho de tela pequeno 320 a 767*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    header {
+        width: 62rem;
+        height: 32rem;
+        background-color: #111110;
+    }
+
+    .headerPage{
+        width: 100%;
+        height: 100%;
+
+        /* margin-left: -6rem !important; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section h1,
+    .line{
+        margin-left: 1rem;
+    }
+
+    section p{
+        width: 65%;
+        margin: 1rem;
+        margin-left: 1rem;
+    }
+
+    .pafs{
+        margin-left: 4rem;
+    }
+
+    aside .citacao{
+        width: 75%
+    }
+
+    footer{
+    width: 50rem;
+    height: 5rem;
+
+    background-color: #000;
+
+    }
+
+    footer .rodape{
+        width: 50rem;
+        height: auto;
+        margin-left: 0rem;
+        /* background-color: darkgrey; */
+    }
+}
+
+
+/* Tamanho de tela pequeno */
+@media only screen and (max-width: 768px) {
+    header .headerPage {
+        width: 100%;
+        margin-left: -6rem !important;
+        /* height: auto; */
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        letter-spacing: 12px;
+    }
+
+    .titleTXT {
+        font-size: 1.8rem;
+        letter-spacing: 4px;
+    }
+
+    .date {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    aside {
+        width: 46rem;
+        height: auto;
+        margin: 0;
+    }
+    blockquote .citacao {
+        margin: 1rem auto;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    table, th, td {
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+}
+
+/* Tamanho de tela médio */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    header{
+        width: 990px;
+    }
+
+    header .headerPage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        letter-spacing: 14px;
+    }
+
+    header .headerPage .heroImg img{
+        margin-top: 2rem;
+        width: 30rem;
+    }
+
+
+    .titleTXT {
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+
+    .date {
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+    }
+
+    section {
+        width: 70%;
+    }
+    section p{
+        font-size: 1.3rem;
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    .citacao{
+        width: 50%;
+        margin: 1rem auto !important;
+    }
+
+    .card h2 {
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+
+    table, th, td {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+    }
+
+    footer{
+        width: 990px;
+    }
+}
+
+/* Tamanho de tela grande */
+@media only screen and (min-width: 992px) {
+    header .headerPage {
+        width: 990px;
+        height: 100%;
+        flex-direction: row;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 18px;
+    }
+
+    .titleTXT {
+        font-size: 2.25rem;
+        letter-spacing: 6px;
+    }
+
+    .date {
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+    }
+
+    section {
+        width: 59%;
+    }
+
+    aside {
+        width: 39%;
+        height: 76rem;
+        margin: 1rem 0.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+    table, th, td {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+}
+
+
+
+
